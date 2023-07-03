@@ -33,7 +33,7 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should return null for invalid action', () => {
-    const data = { a: 4, b: 4, action: undefined || null };
+    const data = { a: 4, b: 4, action: null };
     const result = simpleCalculator(data);
     expect(result).toBeNull();
   });
